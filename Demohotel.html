@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web chính thức</title>
+    <link rel="shortcut icon" type="image/jpg" href="./IMG/logoindex1.jpg" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/demohotel.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.js" ></script>
+    <!-- <script src="./JS/tour.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Trang Chủ</a>
+        <a href="hotel.html">Khách Sạn</a>
+        <a href="tour.html">Du Lịch</a>
+        
+        <a href="login.html">Tài Khoản</a>
+        <a href="#">Liên hệ</a>
+        <a href="#">Cài Đặt</a>
+      </div>
+    
+    
+      <div id="main">
+        <button class="openbtn float-left" onclick="openNav()">☰ Menu</button>
+        <p class="float-right"> <i class="fas fa-user-circle" id="use"
+            style=""></i></p>
+        <form class="float-right" id="xxx">
+          <i class="fas fa-search" style=" color: aliceblue;font-size: 22px;"></i><input type="text" name="search"
+            placeholder="Search.." id="x">
+        </form>
+        <marquee>
+    
+          <!-- <h4 style="font-family: 'Courier New', Courier, monospace;">
+                    Chào Mừng Bạn Đến Với Gun .Ứng Dụng Dịch Vụ Du Lịch Hàng Đầu Việt Nam ,Được Tin Dùng Bởi Khách Hàng .Nhanh Tay Chọn Cho Mình Một Điểm Du Lịch Và Trải Nghiệm Dịch Vụ Của Chúng Tôi !!!!
+                </h4> -->
+          <div class="alert "
+            style="">
+            <strong>GUN !</strong> <b> Chào Mừng Bạn Đến Với Gun .Trang Web Dịch Vụ Du Lịch Hàng Đầu Việt Nam ,Được Tin Dùng
+              Bởi Khách Hàng .Nhanh Tay Chọn Cho Mình Một Điểm Du Lịch Và Trải Nghiệm Dịch Vụ Của Chúng Tôi !!!!
+            </b>
+          </div>
+    
+        </marquee>
+    
+    
+     <div class="row" style="list-style: none;  border-radius: 5px; width: 80%; height:auto; margin: 0px auto; ">
+
+
+       <div class="col-sm-12 col-md-12 col-lg-3" style=" background-color: aliceblue; border-radius: 5px; height: 50px; padding: 0;  margin: 0%; overflow: hidden;">
+    
+
+        <input type="text" style="height: 100%; flex: 1; border: 1px solid white ; color: rgb(132, 90, 247); background: none; outline: none; font-size: 20px;  " placeholder=" Đà Nẵng -Hơn 265 Chỗ">
+    
+        </div>
+       <div class="col-sm-12 col-md-12 col-lg-4"  style=" background-color: aliceblue; border-radius: 5px; height: 50px; padding: 0;  margin: 0%; overflow: hidden; display: flex;">
+
+        <input class="form-control" type="date" value="2020-05-03" id="example-date-input"style="background:none; width: 50%; height: 100%; color:rgb(255, 255, 255);  outline: none; border: none; font-size: 22px;  padding-right: 10px; color: rgb(132, 90, 247); ">
+        <input class="form-control" type="date" value="2020-05-03" id="example-date-input"style="background:none; width: 50%; height: 100%; color:rgb(255, 255, 255);  outline: none; border: none; font-size: 22px;  padding-right: 10px; color: rgb(132, 90, 247); ">
+
+
+
+       </div>
+       <div class="col-sm-12 col-md-12 col-lg-3" style=" background-color: aliceblue; border-radius: 5px; height: 50px; padding: 0;  margin: 0%; overflow: hidden; display: flex;">
+
+        <select name="" id="" style="width: 100%; height: 100%; outline: none; border: none; font-size: 20px; background: none; color: rgb(132, 90, 247);">
+            <option value="">Gia Đình 4 Ngyười</option>
+           
+            <option value="">1 Người</option>
+            <option value="">2 Người</option>
+            <option value="">4 Người</option>
+            <option value="">6 Người</option>
+            <option value="">>10 Người</option>
+            <option value="">Gia Đình 4 Ngyười</option>
+            <option value="">Gia Đình Lớn Hơn 4 Người</option>
+            <option value="">Ý Kiến Khác </option>
+          </select>
+
+       </div>
+       <div class="col-sm-12 col-md-12 col-lg-2" style=" background-color: aliceblue; border-radius: 5px; height: 50px; padding: 0;  margin: 0%; overflow: hidden; display: flex;">
+
+<button class="btn" style="width: 100%; height: 100%; color: rgb(255, 255, 255); background-color: rgb(79, 12, 235);" ><b>Tìm Kiếm </b></button>
+
+       </div>
+     </div>
+    
+    
+    
+      </div>
+<br>
+<h5 class="float-right" style="margin-right: 50px; color: rgb(241, 160, 10);"> Bộ Lọc  <i class="fas fa-sliders-h"></i></h5>
+      <h4 class="text-center" style="color: rgba(21, 6, 243, 0.836);"><b>Tìm Thấy 265 Kết Quả</b></h4>
+    
+      <div class="container" style="padding: 0;">
+
+        <h4><b>Khách Sạn Tại Đà Nẵng</b></h4>
+        
+        <div class="row">
+
+                <div class="col-sm-12 col-md-12 col-lg-3">
+
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.872580305592!2d108.24246214950185!3d16.07210058882459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421784755cbe37%3A0x636c2ed29ade4905!2zS2jDoWNoIHPhuqFuIE5BTE9EIMSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1621414815882!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-9" style="padding: 0;">
+                    
+                    <div class="alert alert-success alert-dismissible" style="color: rgb(255, 255, 255); background-color:  rgb(29, 255, 225);;">
+                       
+                        <strong>Loa Loa !</strong>Ưu Đãi Cho Khách Hàng Lần Đầu Sử Dụng 1 Mã Giảm Giá 30%
+                      </div>
+                      <div class="alert alert-success alert-dismissible" style="color: rgb(255, 255, 255); background-color:  rgb(31, 255, 188);;">
+                       
+                        <strong>Chần Chờ Gì Nữa ! </strong>Chúng Tôi Có Dịch Vụ Tốt Nhất
+                      </div>
+                
+                </div>
+
+        </div>
+<br>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3" >
+                <h6><b>Khoảng Cách Đến Trung Tâm</b></h6> 
+           
+                <input type="checkbox" name="" id=""> Bên Trong Trung Tâm <br>
+                <input type="checkbox" name="" id=""> Cách Trung Tâm khoảng 2km <br>
+                <input type="checkbox" name="" id=""> Cách Trung Tâm  2km-5km <br>
+                <input type="checkbox" name="" id=""> Cách Trung Tâm  5km-15km <br>
+                <input type="checkbox" name="" id=""> Cách Trung Tâm  Hơn 15km <br>
+              
+
+
+            </div>
+                <div class="col-sm-12 col-md-12 col-lg-9" style="background-color: rgb(255, 255, 255); padding: 0;" >
+                    <br>
+                    <input type="text" placeholder="Tên Khách Sạn" style="margin-left: 10px;"> <button style="background-color: rgb(124, 155, 255); border: none; border-radius: 2px; width: 70px; margin-left:10px;">Tìm</button>
+                    <br>
+                    <br>
+                    <Button style="margin-left: 10px;" id="btnmenu">Sắp xếp</Button>
+                    <button id="btnmenu">Phù Hợp Nhất</button>
+                    <button id="btnmenu">Giá Thấp Nhất</button>
+                    <button id="btnmenu">Khoảng Cách Trung Tâm</button>
+                    <button id="btnmenu">Nhiều Đánh Giá</button>
+                    <button id="btnmenu" style="flex: 1;">Mách Bạn Ưu Đãi Lớn</button>
+
+
+
+
+                </div>
+
+        </div>
+
+<hr>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3" id="star">
+                <h5>Hạng Sao</h5>
+                <input type="checkbox"><i class="fas fa-star"></i> <br> 
+                <input type="checkbox"> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i><br> 
+                <input type="checkbox"> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <br> 
+                <input type="checkbox"> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <br> 
+                <input type="checkbox"> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <i class="fas fa-star"> </i> <br> 
+
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-9" id="divhotel" style="padding: 0; display: flex; " >
+
+                <div id="imghotel">
+
+                    <img src="./IMG/hotel1.jpg" alt="">
+                </div>
+                <div id="contenthotel">
+                    <h5><b>InterContinental Đà Nẵng Sun Peninsula Resort </b></h5>
+                    <i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i>  191 Lượt Thích <br>
+                    <i class="fas fa-map-marker" style="color: aqua;"> </i> Bãi Bắc, Bán Đảo Sơn Trà, Đà Nẵng, Việt Nam <br>
+                    <b>Khu Nghỉ Dưỡng,Bể Bơi,.... 1+</b> <br>
+                    <b>Giá Mỗi Đêm Từ :</b>1.290.000 VND
+                </div>
+
+
+            </div>
+
+
+        </div>
+<br>
+        <!--  -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3"></div>
+            <div class="col-sm-12 col-md-12 col-lg-9"  id="divhotel" style="padding: 0; display: flex;" >
+
+                <div id="imghotel">
+
+                    <img src="./IMG/hotel2.png" alt="">
+                </div>
+                <div id="contenthotel">
+                    <h5><b>Hyatt Regency Đà Nẵng Resort & Spa </b></h5>
+                    <i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i>  391 Lượt Thích <br>
+                    <i class="fas fa-map-marker" style="color: aqua;"> </i>Đường Trường Sa, Phường Hòa Hải, Quận Ngũ Hành Sơn, TP.Đà Nẵng, Việt Nam <br>
+                    <b>Khu Nghỉ Dưỡng,Biệt Thự Biển,.... 1+</b> <br>
+                    <b>Giá Mỗi Đêm Từ :</b>3.290.000 VND
+                </div>
+
+
+            </div>
+
+
+        </div>        
+
+        <br>
+        <!--  -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3"></div>
+            <div class="col-sm-12 col-md-12 col-lg-9"  id="divhotel" style="padding: 0; display: flex;" >
+
+                <div id="imghotel">
+
+                    <img src="./IMG/hotel3.jpg" alt="">
+                </div>
+                <div id="contenthotel">
+                    <h5><b>Furama Villas Đà Nẵng  </b></h5>
+                    <i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i>  191 Lượt Thích <br>
+                    <i class="fas fa-map-marker" style="color: aqua;"> </i> 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ Hành Sơn, Bãi biển Bắc Mỹ An, Đà Nẵng, Việt Nam, Việt Nam <br>
+                    <b>Khu Nghỉ Dưỡng,Bể Bơi,.... 1+</b> <br>
+                    <b>Giá Mỗi Đêm Từ :</b>990.000 VND
+                </div>
+
+
+            </div>
+
+
+        </div>   
+        <br>
+        <!--  -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3"></div>
+            <div class="col-sm-12 col-md-12 col-lg-9"  id="divhotel" style="padding: 0; display: flex;" >
+
+                <div id="imghotel">
+
+                    <img src="./IMG/hotel4.jpg" alt="">
+                </div>
+                <div id="contenthotel">
+                    <h5><b>Khu nghỉ dưỡng Furama Đà Nẵng</b></h5>
+                    <i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i>  191 Lượt Thích <br>
+                    <i class="fas fa-map-marker" style="color: aqua;"> </i> 105 Đường Võ Nguyên Giáp, Phường Khuê Mỹ, Quận Ngũ Hành Sơn, Bãi biển Bắc Mỹ An, Đà Nẵng, Việt Nam <br>
+                    <b>Khu Nghỉ Dưỡng,Bể Bơi,.... 1+</b> <br>
+                    <b>Giá Mỗi Đêm Từ :</b>1.890.000 VND
+                </div>
+
+
+            </div>
+
+
+        </div>   
+        <br>
+        <!--  -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3"></div>
+            <div class="col-sm-12 col-md-12 col-lg-9"  id="divhotel" style="padding: 0; display: flex;" >
+
+                <div id="imghotel">
+
+                    <img src="./IMG/hotel5.jfif" alt="">
+                </div>
+                <div id="contenthotel">
+                    <h5><b>Mercure Đà Nẵng French Village BanaHills </b></h5>
+                    <i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i>  191 Lượt Thích <br>
+                    <i class="fas fa-map-marker" style="color: aqua;"> </i>Thôn An Sơn, xã Hòa Ninh, huyện Hòa Vang, TP. Đà Nẵng, Việt Nam <br>
+                    <b>Khu Nghỉ Dưỡng,.... 1+</b> <br>
+                    <b>Giá Mỗi Đêm Từ :</b>1.290.000 VND
+                </div>
+
+
+            </div>
+
+
+        </div>   
+        <br>
+        <!--  -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3"></div>
+            <div class="col-sm-12 col-md-12 col-lg-9 "  id="divhotel" style="padding: 0; display: flex;" >
+
+                <div id="imghotel">
+
+                    <img src="./IMG/hotel6.jfif" alt="">
+                </div>
+                <div id="contenthotel">
+                    <h5><b>Khu nghỉ dưỡng Núi Thần Tài Ebisu Đà Nẵng </b></h5>
+                    <i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i>  191 Lượt Thích <br>
+                    <i class="fas fa-map-marker" style="color: aqua;"> </i> Quốc lộ 14G, Xã Hoà Phú, H. Hoà Vang, Q. Cẩm Lệ, Tp. Đà Nẵng, Việt Nam<br>
+                    <b>Khu Nghỉ Dưỡng,Bể Bơi,.... 1+</b> <br>
+                    <b>Giá Mỗi Đêm Từ :</b>1.290.000 VND
+                </div>
+
+
+            </div>
+
+
+        </div>   
+        <br>
+        <!--  -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-3"></div>
+            <div class="col-sm-12 col-md-12 col-lg-9"  id="divhotel" style="padding: 0; display: flex;" >
+
+                <div id="imghotel">
+
+                    <img src="./IMG/hotel7.jpg" alt="">
+                </div>
+                <div id="contenthotel">
+                    <h5><b>Khách sạn Hilton Đà Nẵng </b></h5>
+                    <i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i>  191 Lượt Thích <br>
+                    <i class="fas fa-map-marker" style="color: aqua;"> </i> 50 Bạch Đằng, Quận Hải Châu, Đà Nẵng, Việt Nam <br>
+                    <b>Khu Nghỉ Dưỡng,Bể Bơi,.... 1+</b> <br>
+                    <b>Giá Mỗi Đêm Từ :</b>7.290.000 VND
+                </div>
+
+
+            </div>
+
+
+        </div>   
+
+
+      </div>
+
+      <br>
+
+      <h4 class="text-center">XEM THÊM</h4>
+      <br>
+      
+      <div class="full">
+        <!-- Footer -->
+      <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+      <!-- Facebook -->
+      <a
+      class="btn btn-primary btn-floating m-1"
+      style="background-color: #3b5998;"
+      href="#!"
+      role="button"
+      ><i class="fab fa-facebook-f"></i
+      ></a>
+      
+      <!-- Twitter -->
+      <a
+      class="btn btn-primary btn-floating m-1"
+      style="background-color: #55acee;"
+      href="#!"
+      role="button"
+      ><i class="fab fa-twitter"></i
+      ></a>
+      
+      <!-- Google -->
+      <a
+      class="btn btn-primary btn-floating m-1"
+      style="background-color: #dd4b39;"
+      href="#!"
+      role="button"
+      ><i class="fab fa-google"></i
+      ></a>
+      
+      <!-- Instagram -->
+      <a
+      class="btn btn-primary btn-floating m-1"
+      style="background-color: #ac2bac;"
+      href="#!"
+      role="button"
+      ><i class="fab fa-instagram"></i
+      ></a>
+      
+      <!-- Linkedin -->
+      <a
+      class="btn btn-primary btn-floating m-1"
+      style="background-color: #0082ca;"
+      href="#!"
+      role="button"
+      ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+      class="btn btn-primary btn-floating m-1"
+      style="background-color: #333333;"
+      href="#!"
+      role="button"
+      ><i class="fab fa-github"></i
+      ></a>
+      </section>
+      <!-- Section: Social media -->
+      
+      <!-- Section: Form -->
+      <section class="">
+      <form action="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-auto">
+        <p class="pt-2">
+          <strong>ĐĂNG KÝ NHẬN BẢN TIN CỦA CHÚNG TÔI</strong>
+        </p>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-md-5 col-12">
+        <!-- Email input -->
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="form5Example2" class="form-control" />
+          <label class="form-label" for="form5Example2">Địa chỉ email</label>
+        </div>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-auto">
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-outline-light mb-4">
+          Đăng ký
+        </button>
+      </div>
+      <!--Grid column-->
+      </div>
+      <!--Grid row-->
+      </form>
+      </section>
+      <!-- Section: Form -->
+      
+      <!-- Section: Text -->
+      <section class="mb-4">
+      <p>
+      Chào mừng đến với trang web chính thức của Gun. Ghé thăm các trang truyền thông xã hội của chúng tôi để có thêm cảm hứng du lịch.
+      </section>
+      <!-- Section: Text -->
+      
+      <!-- Section: Links -->
+      <section class="">
+      <!--Grid row-->
+      <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h6 class="text-uppercase size">LIÊN KẾT HỮU ÍCH</h6>
+      
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text-white">Ở nhà </a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Hướng dẫn cho người mới bắt đầu</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Câu hỏi thường gặp</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Phương tiện truyền thông tin tức</a>
+        </li>
+      </ul>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h6 class="text-uppercase size">Trang</h6>
+      
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text-white">Trang chủ</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Bộ sưu tập</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Vị trí</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Liên hệ chúng tôi</a>
+        </li>
+      </ul>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h6 class="text-uppercase size">CỘNG ĐỒNG </h6>
+      
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text-white">Cộng đồng</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Blog</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Diễn đàn</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Buổi gặp mặt</a>
+        </li>
+      </ul>
+      </div>
+      <!--Grid column-->
+      
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <h6 class="text-uppercase size">GẶP GỠ Gun</h6>
+      
+      <ul class="list-unstyled mb-0">
+        <li>
+          <a href="#!" class="text-white">Về Gun</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Nghề nghiệp</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Chính sách bảo mật</a>
+        </li>
+        <li>
+          <a href="#!" class="text-white">Sơ đồ trang web</a>
+        </li>
+      </ul>
+      </div>
+      <!--Grid column-->
+      </div>
+      <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+      
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      </div>
+
+
+<script>
+
+
+document.getElementById("defaultOpen").click();
+
+function openNava() {
+document.getElementById("myNava").style.height = "100%";
+}
+
+function closeNava() {
+document.getElementById("myNava").style.height = "0%";
+}
+
+
+
+
+function openNav() {
+document.getElementById("mySidebar").style.width = "250px";
+document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+document.getElementById("mySidebar").style.width = "0";
+document.getElementById("main").style.marginLeft = "0";
+}
+
+</script>
+</body>
+</html>

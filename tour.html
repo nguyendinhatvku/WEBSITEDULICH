@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Trang Web chính thức</title>
+  <link rel="shortcut icon" type="image/jpg" href="./IMG/logoindex1.jpg" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./CSS/tour.css">
+  <script src="./JS/tour.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Trang Chủ</a>
+    <a href="hotel.html">Khách Sạn</a>
+    <a href="tour.html"  style="color: red;">Du Lịch</a>
+   
+    <a href="login.html">Tài Khoản</a>
+    <a href="#">Liên hệ</a>
+    <a href="#">Cài Đặt</a>
+  </div>
+
+
+  <div id="main">
+    <button class="openbtn float-left" onclick="openNav()">☰ Menu</button>
+    <p class="float-right"> <i class="fas fa-user-circle"
+        style="color: aliceblue; font-size: 40px; margin-right: 10px;"></i></p>
+    <form class="float-right" id="xxx">
+      <i class="fas fa-search" style=" color: aliceblue;font-size: 22px;"></i><input type="text" name="search"
+        placeholder="Search.." id="x">
+    </form>
+    <marquee>
+
+      <!-- <h4 style="font-family: 'Courier New', Courier, monospace;">
+                Chào Mừng Bạn Đến Với Gun .Ứng Dụng Dịch Vụ Du Lịch Hàng Đầu Việt Nam ,Được Tin Dùng Bởi Khách Hàng .Nhanh Tay Chọn Cho Mình Một Điểm Du Lịch Và Trải Nghiệm Dịch Vụ Của Chúng Tôi !!!!
+            </h4> -->
+      <div class="alert "
+        style=" font-size: 16px; color: aliceblue; font-size: 22px; font-family: 'Goblin One', cursive;">
+        <strong>GUN !</strong> <b> Chào Mừng Bạn Đến Với Gun .Trang Web Dịch Vụ Du Lịch Hàng Đầu Việt Nam ,Được Tin Dùng
+          Bởi Khách Hàng .Nhanh Tay Chọn Cho Mình Một Điểm Du Lịch Và Trải Nghiệm Dịch Vụ Của Chúng Tôi !!!!
+        </b>
+      </div>
+
+    </marquee>
+
+
+    <!--  -->
+    <div id="myNava" class="overlaya">
+      <a href="javascript:void(0)" class="closebtna" onclick="closeNava()">&times;</a>
+      <div class="overlay-contenta">
+       
+        <div id="fomhotel" class="container-fluid">
+            <h1 style="font-size: 44px;">Nhập Thông Tin Tìm Kiếm</h1>
+            <hr>
+
+           
+              <!-- <input class="form-control" type="date" value="2020-05-03" id="example-date-input" style="width: 100%; height: 50px;  border-radius: 3px; "> -->
+           
+              <div class="row" style="border-bottom: 1px solid white; height: 60px; width: 60%; margin: 0pc auto;  min-width: 350px; margin-bottom: 10px;"> 
+                <i class="fab fa-fly" id="inputhotel" style=""></i>
+
+                <input type="text" id="inputhotel_main" style="" placeholder="Nơi Bạn Đến">
+              </div>
+
+              <div class="row" style="  border-bottom: 1px solid white; height: 60px; width: 60%; margin: 0pc auto;   min-width: 350px;"> 
+                <i class="fas fa-house-user" id="inputhotel" style=" "></i>
+
+                <input type="text" id="inputhotel_main" style="" placeholder="Nơi Xuất Phát">
+              </div>
+
+              <div class="row" style=" width: 60%; margin: 0pc auto;  border-radius: 10px;  min-width: 350px; margin-top: 10px;">
+
+                <div class="col-sm-12 col-md-12 col-lg-4" style="border-right: 1px solid rgb(216, 216, 216); ">
+                  <input class="form-control" type="date" value="2020-05-03" id="example-date-input" style="background: none; color: aliceblue; font-size: 20px;  height: 50px;   border-radius: 3px; outline: none; border: none; ">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+
+                  <select name="" id=""  style="width: 100%; height: 50px;  border-radius: 3px; outline: none; border: none; background: none; color: rgb(96, 247, 8); font-size: 20px; " >
+
+                    <option value="">Chọn Giá Tour</option>
+                    <option value="">1 Triệu</option>
+                    <option value="">----</option>
+                  </select>
+
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4" style="padding: 0;">
+
+       <p class="text-center">           <button style=" width: 100%; height: 100%;background: none; color: aliceblue; font-size: 30px; border: 2px solid white;" >Tìm Kiếm</button></p>
+                </div>
+
+
+              </div>
+           
+
+
+            
+
+        </div>
+        
+      </div>
+    </div>
+    
+      <!-- <button >ffff</button> -->
+      <!-- <p id="sear" class="text-center"  onclick="openNava()">Tìm Kiếm </p> -->
+      <h1 class="float-left" id="ks" style="margin-left: 10%; color: aliceblue;">Tìm Kiếm <font >Tour Du lịch</font></h1> 
+      <hr>
+      <br>
+      <!-- <button >ffff</button> -->
+      <!-- <p id="sear" class="text-center"  onclick="openNava()">Tìm Kiếm </p> -->
+    <span class="float-left"  id="sear" style="cursor:pointer;margin-left: 10%; margin-top: 10px;" onclick="openNava()">Đặt Tour Du Lịch</span> 
+    <!--  -->
+
+
+    
+
+  </div>
+
+<!-- menu -->
+
+<hr>
+
+<!-- NOI DUNG -->
+
+<h3 class="text-center">Ưu Đãi Đặc Biệt Hôm Nay</h3>
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide border" data-ride="carousel" >
+    <div class="carousel-inner" style="width: 100%; height: auto;" id="maketing">
+       <div class="carousel-item active">
+          <img class="d-block w-100" src="./IMG/mk1.jpg" alt="Leopard">
+       </div>
+       <div class="carousel-item">
+          <img class="d-block w-100" src="./IMG/mk2.jpg" alt="Cat" >
+       </div>
+       <div class="carousel-item">
+          <img class="d-block w-100" src="./IMG/mk3.jpg" alt="Lion">
+       </div>
+       <div class="carousel-item">
+        <img class="d-block w-100" src="./IMG/mk4.jpg" alt="Lion">
+     </div>
+    </div>
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+ </div>
+
+
+</div>
+
+<br>
+<br>
+<hr>
+<div class="container-fluid">
+
+ <div class="row" style="height: auto;">
+
+  <div class="col-sm-12 col-md-12 col-lg-6" style="height: 860px;">
+   
+
+    <h1 class="text-center">Hành trình Xuyên Việt <br>
+      Vì yêu, phải đi để hiểu</h1>
+        <p  style=" padding-left: 10px;">Có thể bạn đã đi nhiều nơi trên thế giới, đến nhiều quốc gia và am hiểu về văn hóa của họ. Nhưng đã bao giờ bạn tự hỏi bản thân rằng, mình đã hiểu được trọn vẹn về nước Việt thân yêu? Đã thật sự hiểu về ý nghĩa của những cột mốc chủ quyền hay đời sống văn hóa, ẩm thực của người dân? Đã hiểu sâu sắc về những giá trị không thể đo lường mà Việt Nam đã được thiên nhiên ưu ái? Bạn tin mình sẽ làm được điều đó trên chính quê hương mình?
+
+          Cũng như hàng triệu người Việt Nam khác, bạn nghĩ chắc chắn mình sẽ đi một lần trong đời. Vì yêu, nên phải đi để hiểu. Không thể không đi. Vào một ngày nào đó trong tương lai. Vậy tại sao không phải là ngay bây giờ?
+          
+          Hành trình 19 ngày với chủ đề Tôi yêu Việt Nam mà Vietravel tận tâm xây dựng là hành trình 7 chặng thong thả, an toàn, để mỗi chúng ta đắm mình trong những vẻ đẹp của cảnh và người, để hiểu sâu về văn hóa các vùng miền, để dâng trào cảm xúc tự hào dân tộc và thêm yêu Tổ quốc. Mỗi chuyến đi là một kỷ niệm không thể nào quên! Hãy đi để cảm nhận vẻ đẹp của một Việt Nam trong tim mỗi người</p>
+      
+          <iframe width="100%" height="400px" src="https://www.youtube.com/embed/jUba2wSbsSs?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-6" id="vnbT" style=" background-color: white; height: 900px; clear: both;">
+    
+<div class="mt1" style="width: 312px;"  >
+  <img src="./IMG/VNMB.png" alt="" style="width: 100%;" id="vku">
+
+
+</div>
+
+<div class="mt2" style="width: 246px;">
+
+
+  <img src="./IMG/VNMT1.png" alt="" style="width: 100%; position: relative; left: 113px; top: -16px;" id="vku" >
+</div>
+
+<div class="mt2" style="width: 200px;">
+
+
+  <img src="./IMG/VNMT2.png" alt="" style="width: 100%; position: relative; left: 225px; top: -33px;"  id="vku">
+</div>
+<div class="mt2" style="width: 180px;">
+
+
+  <img src="./IMG/VNMT3.png" alt="" style="width: 100%; position: relative; left: 255px; top: -71px;" id="vku">
+</div>
+
+<div class="mt2" style="width: 170px;">
+
+
+  <img src="./IMG/VNMT4.png" alt="" style="width: 100%; position: relative; left: 207px; top: -150px;" id="vku" >
+</div>
+
+
+<div class="mt2" style="width: 170px;">
+
+
+  <img src="./IMG/VNMT5'.png" alt="" style="width: 100%; position: relative; left: 120px; top: -255px;"id="vku" >
+</div>
+<div class="mt2" style="width: 170px;">
+
+
+  <img src="./IMG/VNMT6.png" alt="" style="width: 100%; position: relative; left: 80px; top: -355px;" id="vku">
+</div>
+
+<div class="mt2" style="width: 130px;">
+
+
+  <img src="./IMG/Hoangsa.png" alt="" style="width: 100%; position: relative; left: 350px; top: -840px;" >
+</div>
+
+<div class="mt2" style="width: 130px;">
+
+
+  <img src="./IMG/Truongsa.png" alt="" style="width: 100%; position: relative; left: 360px; top: -460px;" >
+</div>
+
+
+<div class="mt2" style="width: 130px;">
+
+
+  <img src="./IMG/phúquoc.png" alt="" style="width: 100%; position: relative; left: -30px; top: -660px;" >
+</div>
+    </div>
+
+ </div>
+
+
+
+
+
+ 
+
+
+ 
+ 
+</div>
+<hr>
+
+
+<div class="container" >
+  <h3>Ưu Đã Hè Về Khám Phá Ngay Bây Giờ </h3>
+  <hr style="border:  1px solid black; background-color: black;">
+
+  <br>
+ 
+
+  <!--  -->
+  <div class="row" >
+<div class="col-sm-12 col-md-12 col-lg-4" id="sale">
+  <img src="./IMG/tourvungtau3n2dvietintravel.jpg" alt="" style="width: 100%;" id="imggg">
+ <h5>Combo du lịch Vũng Tàu - Côn Đảo <br>Hai Ngày Một Đêm</h5>
+ <i class="far fa-clock" style="color: green;"> 2 Ngày 1 Đêm</i> <br>
+ <i class="fas fa-calendar-day" style="color: blueviolet;"> </i> Hàng Ngày
+ <i class="far fa-money-bill-alt float-right" style="color: rgb(255, 0, 0);">  1.940.000 VND</i>
+ <img src="./IMG/sale30.png" alt="" id="sale30">
+
+</div>
+<div class="col-sm-12 col-md-12 col-lg-4" style="overflow: hidden;" id="sale2">
+
+  <img src="./IMG/tourdanang.jpg" alt="" style="width: 100%; height: 252px; " class="note" id="imggg">
+  <h5>Combo Du Lịch Khám Phá Đà Nẵng <br>
+  Ba Ngày Hai Đêm
+  </h5>
+  <i class="far fa-clock" style="color: green;"> 3 Ngày 2 Đêm</i> <br>
+ <i class="fas fa-calendar-day" style="color: blueviolet;"> </i> Hàng Ngày
+ <i class="far fa-money-bill-alt float-right" style="color: rgb(255, 0, 0);">  3.940.000 VND</i>
+ <img src="./IMG/sale30.png" alt="" id="sale30">
+</div>
+<div class="col-sm-12 col-md-12 col-lg-4" style="overflow: hidden;" id="sale3">
+  <img src="./IMG/tourquynhon.jpg" alt="" style="width: 100%;" id="imggg">
+  <h5>Combo Du Lịch Khám Phá Quy Nhơn - Phú Yên 
+    Ba Ngày Hai Đêm
+    </h5>
+    <i class="far fa-clock" style="color: green;"> 3 Ngày 2 Đêm</i> <br>
+   <i class="fas fa-calendar-day" style="color: blueviolet;"> </i> Hàng Ngày
+   <i class="far fa-money-bill-alt float-right" style="color: rgb(255, 0, 0);">  5.240.000 VND</i>
+   <img src="./IMG/sale30.png" alt="" id="sale30">
+  
+</div>
+  </div>
+  <div class="row">
+
+    <div class="col-sm-12 col-md-12 col-lg-4" id="sale">
+      <img src="./IMG/tourphuquoc.png" alt="" style="width: 100%;   " class="note" id="imggg">
+     <h5>Combo du lịch Phú Quốc <br>Hai Ngày Một Đêm</h5>
+     <i class="far fa-clock" style="color: green;"> 2 Ngày 1 Đêm</i> <br>
+     <i class="fas fa-calendar-day" style="color: blueviolet;"> </i> Hàng Ngày
+     <i class="far fa-money-bill-alt float-right" style="color: rgb(255, 0, 0);">  3.940.000 VND</i>
+     <img src="./IMG/sale30.png" alt="" id="sale30">
+    
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4" style="overflow: hidden;" id="sale2">
+    
+      <img src="./IMG/tourHa-Long-Bay.png" alt="" style="width: 100%; " class="note" id="imggg">
+      <h5>Combo Du Lịch Khám Phá Hạ Long <br>
+      Ba Ngày Hai Đêm
+      </h5>
+      <i class="far fa-clock" style="color: green;"> 1 Ngày 2 Đêm</i> <br>
+     <i class="fas fa-calendar-day" style="color: blueviolet;"> </i> Hàng Ngày
+     <i class="far fa-money-bill-alt float-right" style="color: rgb(255, 0, 0);">  3.940.000 VND</i>
+     <img src="./IMG/sale30.png" alt="" id="sale30">
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4" style="overflow: hidden;" id="sale3">
+      <img src="./IMG/toursapa.jpg" alt="" style="width: 100%;" class="note" id="imggg">
+      <h5>Combo Du Lịch Khám Phá Quy Nhơn - Phú Yên 
+        Ba Ngày Hai Đêm
+        </h5>
+        <i class="far fa-clock" style="color: green;"> 3 Ngày 2 Đêm</i> <br>
+       <i class="fas fa-calendar-day" style="color: blueviolet;"> </i> Hàng Ngày
+       <i class="far fa-money-bill-alt float-right" style="color: rgb(255, 0, 0);">  4.240.000 VND</i>
+       <img src="./IMG/sale30.png" alt="" id="sale30">
+      
+    </div>
+
+
+
+
+  </div>
+  <br>
+  <p class="text-center">Xem Thêm <i class="fas fa-chevron-circle-right"></i></p>
+
+<br>
+
+
+  
+ 
+</div>
+
+<hr>
+
+<h2 class="text-center">Bạn Có Thể Xem Các Địa Điểm Du Lịch Hot Nhất Của Việt Nam Tại Đây</h2>
+
+
+
+<hr>
+
+<h1 class="text-center" style="font-size: 75px;"># Tôi Yêu <font style="color: red;">Việt Nam</font></h1>
+<h3 class="text-center">Dành Riêng Cho Hành Trình Xuyên Việt</h3>
+<p class="text-center">Hãy là người Việt Nam đầu tiên chinh phục hành trình xuyên Việt suốt <br> dải đất hình chữ <font style="color: rgb(255, 0, 0); font-size: 33px;">S</font> xinh đẹp với sản phẩm độc quyền của Vietravel</p>
+<br>
+
+<div class="container-fluid" style="width: 90%;" >
+
+  <div class="row" >
+
+    <div class="col-sm-12 col-md-12 col-lg-3" id="tourimg1">
+      <img src="./IMG/halongpay1.jpg" alt="" style="width: 100%;" id="imggg">
+      <div class="bottom-left "><h4><b>Vịnh Hạ Long</b></h4> </div>
+    
+      
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-3" id="tourimg1">
+      <img src="./IMG/sapa2.jpg" alt="" style="width: 100%;" id="imggg">
+      <div class="bottom-left " style="left: 40%;"><h4><b>Sa Pa</b></h4> </div>
+
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-3" id="tourimg1">
+      <img src="./IMG/dd3.jpg" alt="" style="width: 100%;" id="imggg">
+      <div class="bottom-left " style="left: 40%;"><h4><b>Đà Nẵng</b></h4> </div>
+
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-3" style="flex: 1;" id="tourimg1">
+      
+      <img src="./IMG/quynhon.jpg" alt="" style="width: 100%;" id="imggg">
+      <div class="bottom-left " style="left: 35%;"><h4><b>Quy Nhơn</b></h4> </div>
+
+    </div>
+
+
+
+
+  </div>
+  <br>
+  <!--  -->
+  
+
+
+</div>
+
+<p class="text-center">Xem Thêm <i class="fas fa-chevron-circle-right"></i></p>
+
+<hr>
+
+
+
+<div class="full">
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+<!-- Section: Social media -->
+<section class="mb-4">
+<!-- Facebook -->
+<a
+class="btn btn-primary btn-floating m-1"
+style="background-color: #3b5998;"
+href="#!"
+role="button"
+><i class="fab fa-facebook-f"></i
+></a>
+
+<!-- Twitter -->
+<a
+class="btn btn-primary btn-floating m-1"
+style="background-color: #55acee;"
+href="#!"
+role="button"
+><i class="fab fa-twitter"></i
+></a>
+
+<!-- Google -->
+<a
+class="btn btn-primary btn-floating m-1"
+style="background-color: #dd4b39;"
+href="#!"
+role="button"
+><i class="fab fa-google"></i
+></a>
+
+<!-- Instagram -->
+<a
+class="btn btn-primary btn-floating m-1"
+style="background-color: #ac2bac;"
+href="#!"
+role="button"
+><i class="fab fa-instagram"></i
+></a>
+
+<!-- Linkedin -->
+<a
+class="btn btn-primary btn-floating m-1"
+style="background-color: #0082ca;"
+href="#!"
+role="button"
+><i class="fab fa-linkedin-in"></i
+></a>
+<!-- Github -->
+<a
+class="btn btn-primary btn-floating m-1"
+style="background-color: #333333;"
+href="#!"
+role="button"
+><i class="fab fa-github"></i
+></a>
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Form -->
+<section class="">
+<form action="">
+<!--Grid row-->
+<div class="row d-flex justify-content-center">
+<!--Grid column-->
+<div class="col-auto">
+  <p class="pt-2">
+    <strong>ĐĂNG KÝ NHẬN BẢN TIN CỦA CHÚNG TÔI</strong>
+  </p>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-md-5 col-12">
+  <!-- Email input -->
+  <div class="form-outline form-white mb-4">
+    <input type="email" id="form5Example2" class="form-control" />
+    <label class="form-label" for="form5Example2">Địa chỉ email</label>
+  </div>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-auto">
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-outline-light mb-4">
+    Đăng ký
+  </button>
+</div>
+<!--Grid column-->
+</div>
+<!--Grid row-->
+</form>
+</section>
+<!-- Section: Form -->
+
+<!-- Section: Text -->
+<section class="mb-4">
+<p>
+Chào mừng đến với trang web chính thức của Gun. Ghé thăm các trang truyền thông xã hội của chúng tôi để có thêm cảm hứng du lịch.
+</section>
+<!-- Section: Text -->
+
+<!-- Section: Links -->
+<section class="">
+<!--Grid row-->
+<div class="row">
+<!--Grid column-->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+<h6 class="text-uppercase size">LIÊN KẾT HỮU ÍCH</h6>
+
+<ul class="list-unstyled mb-0">
+  <li>
+    <a href="#!" class="text-white">Ở nhà </a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Hướng dẫn cho người mới bắt đầu</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Câu hỏi thường gặp</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Phương tiện truyền thông tin tức</a>
+  </li>
+</ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+<h6 class="text-uppercase size">Trang</h6>
+
+<ul class="list-unstyled mb-0">
+  <li>
+    <a href="#!" class="text-white">Trang chủ</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Bộ sưu tập</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Vị trí</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Liên hệ chúng tôi</a>
+  </li>
+</ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+<h6 class="text-uppercase size">CỘNG ĐỒNG </h6>
+
+<ul class="list-unstyled mb-0">
+  <li>
+    <a href="#!" class="text-white">Cộng đồng</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Blog</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Diễn đàn</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Buổi gặp mặt</a>
+  </li>
+</ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+<h6 class="text-uppercase size">GẶP GỠ Gun</h6>
+
+<ul class="list-unstyled mb-0">
+  <li>
+    <a href="#!" class="text-white">Về Gun</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Nghề nghiệp</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Chính sách bảo mật</a>
+  </li>
+  <li>
+    <a href="#!" class="text-white">Sơ đồ trang web</a>
+  </li>
+</ul>
+</div>
+<!--Grid column-->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+© 2020 Copyright:
+<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+
+<script src="turn.js"></script>
+
+<script>
+
+
+  $('#album').turn({CanvasGradient:true,accleration:true});
+    </script>
+  <script>
+
+
+// menu
+      document.getElementById("defaultOpen").click();
+
+      function openNava() {
+document.getElementById("myNava").style.height = "100%";
+}
+
+function closeNava() {
+document.getElementById("myNava").style.height = "0%";
+}
+
+
+
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+
+
+
+
+// 
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  </script>
+</body>
+</html>

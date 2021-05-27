@@ -1,0 +1,230 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(../IMG/hinh-nen-phong-canh-dep-37.jpg);
+    background-repeat: no-repeat;
+     background-position: center; 
+     background-size: cover;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #38fc07;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(14, 239, 255);
+   font-size: 30px;
+   border-radius: 10px;
+  }
+  
+  #main {
+   height:auto;
+ 
+    transition: margin-left .5s;
+    padding: 16px;
+
+    background-image: url(../IMG/hea.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: hea;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    text-align: center;
+   
+}
+@keyframes hea {
+    0%{ background-image: url(../IMG/hea.png);}
+    50%{
+      background-image: url(../IMG/Langkawi.jpg);
+    }
+    100%{
+        background-image: url(../IMG/hinh-nen-phong-canh-dep-37.jpg);
+    }
+}
+
+.alert{
+  font-size: 16px; color: aliceblue; font-size: 22px; font-family: 'Goblin One', cursive;
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+#xxx{
+    margin-right: 20px;
+    border-bottom: 2px solid #f1f1f1;
+  
+  }
+  #x{
+    height: 40px;
+    background: none;
+    border: none;
+    color: aliceblue;
+    border-bottom: 2px solid #f1f1f1;
+   
+  }
+  #x[type=text] {
+    outline: none;
+    border: none;
+    width: 130px;
+    box-sizing: border-box;
+  
+    border-radius: 4px;
+    font-size: 16px;
+    
+    
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  #x[type=text]:focus {
+      /* background: none; */
+    width: 200px;
+  }
+  #use{
+    color: aliceblue; font-size: 40px; margin-right: 10px;
+  }
+
+  /*  */
+
+
+
+  #btnmenu{
+      border: none;
+      border-radius: 5px;
+      height: 50px;
+      outline: none;
+      color: white;
+      background-color:  rgb(253, 11, 11);
+      margin-bottom: 5px;
+  }
+
+  #imghotel{
+      width: 30%;
+      height: auto;
+  
+  }
+  #imghotel img{
+      width: 100%;
+      height: 100%;
+  }
+  #contenthotel{
+      flex: 1;
+      height: auto;
+        border: 1px solid wheat;
+      padding: 20px;
+  }
+  .size {
+    color: #B2910E;
+    font-size: 20px;
+    /* font-size: 1rem; */
+  }
+  #contenthotel i{
+color: rgb(219, 255, 13);
+}
+#divhotel:hover{
+    border: 5px solid rgb(130, 130, 255);
+    box-shadow: 10px blue;
+}
+#star i{
+    color: yellow;
+}
+@media only screen and (max-width: 600px) {
+
+  #note{
+    height: 300px;
+  }
+
+
+
+  #ks{
+    font-size: 25px
+  }
+
+  #sear{
+    font-size: 22px;
+  }
+  .alert{
+    font-size: 15px;
+  }
+  .openbtn{
+    font-size: 10px
+  }
+  #x[type=text]:focus {
+    /* background: none; */
+  width: 150px;
+}
+#x{
+  height: 20px;
+}
+#use{
+  color: aliceblue; font-size: 24px; margin-right: 10px;
+}
+#use{
+  color: aliceblue; font-size: 24px; margin-right: 10px;
+}
+.sidebar{
+  height: 98%;
+}
+.sidebar a{
+  font-size: 15px;
+}
+#mysidebar{
+  width: 200px;
+}
+
+
+#divhotel{
+  font-size: 10px;
+}
+#imghotel{
+  width: 40%;
+  height: auto;
+
+}
+  }
